@@ -1,6 +1,6 @@
 # jesusFingersFrontend
 
-#bracnh 룰
+# bracnh 룰
 
 ## main
 
