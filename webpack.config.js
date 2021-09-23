@@ -18,9 +18,24 @@ module.exports = {
         loader: "babel-loader",
       },
       {
-        test: /\.css$/,
+        test: /\.(css)$/,
         use: [{ loader: "style-loader" }, { loader: "css-loader" }],
+        exclude: /node_modules/
       },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              // Prefer `dart-sass`
+              implementation: require("sass"),
+            },
+          },
+        ]
+      }
     ],
   },
   plugins: [
