@@ -5,7 +5,7 @@ function App() {
   const a = 'test';
   return (
     <div>
-      <h1> jesusFingers 시작~~~~~~~~~~ 화이팅화이팅~~~~~~~~~~</h1>
+      <h1>~~~~~~~~</h1>
     </div>
   );
 }
